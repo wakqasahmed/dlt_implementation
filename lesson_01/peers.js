@@ -2,7 +2,6 @@ let nodes = [];
 let timer = 0;
 const dgram = require('dgram');
 const server = dgram.createSocket('udp4');
-const args = process.argv.slice(2);
 let node = {
   ip: null,
   port: null
@@ -12,9 +11,7 @@ let currentNode = {
   port: null
 };
 
-const util = require('./util'); 
-
-const init = function(args) {
+const initPeers = function(args) {
 
   server.on('listening', () => {
     const address = server.address();
@@ -51,32 +48,22 @@ const broadcastMessage = function(data) {
   nodes.forEach(node => {
     if(node.port != currentNode.port){
       server.send(data,node.port,node.ip,()=>{
+        // console.log(`Message ${data} sent to ${node.ip}:${node.port}`)
       })
     }
   });
-}
-
-const scheduleNextMessage = function() {
-  timer = setInterval(() => {
-    broadcastMessage("test");
-  }, util.getRandomIntInclusive(500,5000));
+  // console.log("Message broadcasted successfully.")
 }
 
 const processIncomingMessage = function(data, ip, port) {
   console.log("Message [" + data + "] from [" + ip + "]:[" + port + "]" + "\n");
 }
 
-if(!args || isNaN(args[0])){
-  console.log(`command syntax: node 01.js 8001`);
-  return;
-}
-
 server.on('message', (msg, rinfo) => {
   processIncomingMessage(msg, rinfo.address, rinfo.port)
+  // console.log(`server got: ${msg} from ${rinfo.address}:${rinfo.port}`);
 });
 
+module.exports = { initPeers, broadcastMessage }
 
-(async () => {
-  await init(args);
-  scheduleNextMessage();
-})();
+
