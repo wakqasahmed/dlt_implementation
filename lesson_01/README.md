@@ -23,3 +23,5 @@ Open separate terminal for each of the given below:
 * `node 02.js 8001`
 * `node 02.js 8002`
 * `node 02.js 8003`
+
+![Output](https://user-images.githubusercontent.com/4486133/111683032-51a70580-8825-11eb-9046-21a4cb91fd13.png)
