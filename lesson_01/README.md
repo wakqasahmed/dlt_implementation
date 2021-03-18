@@ -2,8 +2,6 @@
 
 ### Lesson 01
 
-`cd lesson_01`
-
 #### TODO 01
 
 ![Instructions](https://user-images.githubusercontent.com/4486133/111676504-85326180-881e-11eb-9c18-63b0848ebd2e.png)

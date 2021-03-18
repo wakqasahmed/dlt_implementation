@@ -8,11 +8,12 @@
 
 `git clone https://github.com/wakqasahmed/dlt_implementation.git`
 
-### Lesson 01
+### Lesson 01 
+#### Time taken: about 2.5 hrs
 
-`cd lesson_01`
+[Specifications](./lesson_01/README.md)
 
 Open separate terminal for each of the given below:
-* `node 01.js 8001` or `node 02.js 8001`
-* `node 01.js 8002` or `node 02.js 8002`
-* `node 01.js 8003` or `node 02.js 8003`
+* `node ./lesson_01/01.js 8001` or `node ./lesson_01/02.js 8001`
+* `node ./lesson_01/01.js 8002` or `node ./lesson_01/02.js 8002`
+* `node ./lesson_01/01.js 8003` or `node ./lesson_01/02.js 8003`
