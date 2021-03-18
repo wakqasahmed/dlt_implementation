@@ -8,6 +8,8 @@
 
 `git clone https://github.com/wakqasahmed/dlt_implementation.git`
 
+`cd dlt_implementation`
+
 ### Lesson 01 
 #### Time taken: about 2.5 hrs
 
