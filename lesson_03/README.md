@@ -26,5 +26,6 @@ Commands
 - `ledger` - _To check the list of all transactions executed so far_
 - `send <userIntitials>` e.g. `send wa` - _To send 1 WBE token to another user_
 - `pending` - _To check the list of all pending transactions, waiting for recipient to approve_
+- `approve <txnNumber>` e.g. `approve 20` _To approve transaction requiring recipient approval_
 
 ![Output]()
