@@ -1,6 +1,6 @@
 # DLT Implementation and Internals Step-by-Step
 
-### Lesson 02
+### Lesson 03
 
 #### Pre-requisites
 
@@ -8,7 +8,7 @@ Node >= 15.12.0
 
 `npm install`
 
-#### TODO 03
+#### TODO 04
 
 ![Instructions]()
 
@@ -25,5 +25,6 @@ Commands
 - `balance` - _To check the node balance_
 - `ledger` - _To check the list of all transactions executed so far_
 - `send <userIntitials>` e.g. `send wa` - _To send 1 WBE token to another user_
+- `pending` - _To check the list of all pending transactions, waiting for recipient to approve_
 
-![Output](https://user-images.githubusercontent.com/4486133/115118568-1a528280-9fa4-11eb-8a2a-78b819c1814c.png)
+![Output]()

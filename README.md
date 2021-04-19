@@ -35,3 +35,9 @@ Open separate terminal for each of the given below:
 - `node -r esm index.mjs 8001 wa`
 - `node -r esm index.mjs 8002 ok`
 - `node -r esm index.mjs 8003 je`
+
+Commands
+
+- `balance` - _To check the node balance_
+- `ledger` - _To check the list of all transactions executed so far_
+- `send <userIntitials>` e.g. `send wa` - _To send 1 WBE token to another user_
