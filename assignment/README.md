@@ -31,6 +31,7 @@ Commands
 ![Output](https://user-images.githubusercontent.com/4486133/127739371-40a8916d-b587-4af8-98c5-0f6382477c42.png)
 
 #### TODO 02: Configurable Blockchain
+![Output](https://user-images.githubusercontent.com/4486133/127739374-b62ccc0d-360c-4454-b343-07618f846681.png)
 
 ![Output](https://user-images.githubusercontent.com/4486133/127739374-b62ccc0d-360c-4454-b343-07618f846681.png)
 
