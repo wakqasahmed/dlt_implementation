@@ -75,6 +75,12 @@ const processMessage = function (data) {
 //     ■ <ETX>: ASCII CHARACTER 3
 
 const createMessage = function (message) {
+  // Convert message from string to ascii (binary)
+  // https://stackoverflow.com/questions/43932133/how-to-convert-to-ascii-using-node-js
+  // const toAscii = (string) => string.split('').map(char=>char.charCodeAt(0)).join(" ")
+  // console.log(toAscii("Hello, World"))
+  // 72 101 108 108 111 44 32 87 111 114 108 100
+
   const encodedMessage = `${util.dec2bin(2)} ${
     message.length
   } ${message} ${util.dec2bin(3)}`;
